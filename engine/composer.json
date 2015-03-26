@@ -35,7 +35,8 @@
             "app/database/seeds"
         ],
         "psr-0": {
-            "": "app/controllers"
+            "": "app/controllers",
+            "": "app/custom"
         },
         "psr-4": {
             "Bootstrap\\": "bootstrap/"

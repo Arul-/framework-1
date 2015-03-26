@@ -2,6 +2,10 @@
 
 class Users {
 
+    /**
+     * @access protected
+     * @class AccessControl {@requires user}
+     */
     function index()
     {
         return User::all();

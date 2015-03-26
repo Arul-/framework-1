@@ -40,6 +40,8 @@ $r = new Restler();
 $r->setSupportedFormats('JsonFormat', 'XmlFormat');
 $r->addApiClass('Users');
 $r->addApiClass('Resources');
+$r->addAuthenticationClass('AccessControl');
+
 
 
 /*
