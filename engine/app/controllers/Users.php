@@ -4,9 +4,9 @@ class Users {
 
     /**
      * @access protected
-     * @class AccessControl {@requires user}
+     * @class  AccessControl {@requires user}
      */
-    function index()
+    public function index()
     {
         return User::all();
     }
