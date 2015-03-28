@@ -25,7 +25,7 @@ class AccessControl implements iAuthenticate
         }
         static::$role = $roles[$_GET['api_key']];
         $userClass::setCacheIdentifier(static::$role);
-        Resources::$accessControlFunction = 'AccessControl::verifyAccess';
+        Defaults::$accessControlFunction = 'AccessControl::verifyAccess';
         error_log('aa');
         return static::$requires == static::$role || static::$role == 'admin';
     }
